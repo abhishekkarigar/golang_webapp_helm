@@ -28,7 +28,8 @@ spec:
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           #image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-          image: "192.168.99.119:5002/myapp"
+          #image: "192.168.99.119:5002/myapp"
+          image: "{{ .Values.registry }}/{{ .Values.imageName }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: 5555
