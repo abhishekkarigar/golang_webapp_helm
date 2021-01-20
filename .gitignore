@@ -1,3 +1,6 @@
 **/*.out
+<<<<<<< HEAD
 .idea
 .gitignore
+=======
+>>>>>>> 66bb58a1811a51aa771c7c0f08ba3412295c053a
